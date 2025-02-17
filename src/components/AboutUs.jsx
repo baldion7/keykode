@@ -1,5 +1,6 @@
 import { useState } from "react"
 import "../styles/AboutUs.css"
+import AnimatedContent from "../blocks/Animations/AnimatedContent/AnimatedContent.jsx";
 
 const workflowSteps = [
     { label: "Planificación", description: "Definimos objetivos y estrategias" },
@@ -13,6 +14,16 @@ const AboutUs = () => {
     const [activeStep, setActiveStep] = useState(0)
 
     return (
+        <AnimatedContent
+            distance={150}
+            direction="vertical"
+            reverse={false}
+            config={{tension: 80, friction: 20}}
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+        >
         <section id="nosotros" className="about-section">
             <div className="about-container">
                 <div className="workflow-container">
@@ -32,6 +43,7 @@ const AboutUs = () => {
                 </div>
             </div>
         </section>
+        </AnimatedContent>
     )
 }
 

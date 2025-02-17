@@ -4,6 +4,7 @@ import '../styles/Hero.css';
 import SplitText from "../TextAnimations/SplitText/SplitText.jsx";
 import RotatingText from "../TextAnimations/RotatingText/RotatingText.jsx";
 import DecryptedText from "../TextAnimations/DecryptedText/DecryptedText.jsx";
+import AnimatedContent from "../blocks/Animations/AnimatedContent/AnimatedContent.jsx";
 
 
 const Hero = () => {
@@ -11,6 +12,16 @@ const Hero = () => {
         console.log('All letters have animated!');
     };
     return (
+        <AnimatedContent
+            distance={150}
+            direction="vertical"
+            reverse={false}
+            config={{tension: 80, friction: 20}}
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+        >
         <section className="hero">
             <div className="hero-pattern"></div>
             <div className="container hero-content">
@@ -63,6 +74,7 @@ const Hero = () => {
                 </div>
             </div>
         </section>
+        </AnimatedContent>
     );
 };
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Users, Rocket, MessageSquare } from 'lucide-react';
 import '../styles/WhyUsSection.css';
+import AnimatedContent from "../blocks/Animations/AnimatedContent/AnimatedContent.jsx";
 
 const WhyUsSection = () => {
     const features = [
@@ -22,6 +23,16 @@ const WhyUsSection = () => {
     ];
 
     return (
+        <AnimatedContent
+            distance={150}
+            direction="vertical"
+            reverse={false}
+            config={{tension: 80, friction: 20}}
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+        >
         <section id="why-us" className="why-us-section">
             <div className="why-us-container">
                 <div className="why-us-header">
@@ -43,6 +54,7 @@ const WhyUsSection = () => {
                 </div>
             </div>
         </section>
+        </AnimatedContent>
     );
 };
 
