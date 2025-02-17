@@ -1,0 +1,50 @@
+
+
+.stats-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.stats-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.stats-card {
+    background-color: rgba(51, 65, 85, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-0.5rem);
+}
+
+.stats-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #00A0E9;
+    margin-bottom: 1rem;
+}
+
+.stats-card h3 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.stats-card p {
+    color: #9CA3AF;
+}
+
+@media (min-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
