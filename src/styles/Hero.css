@@ -85,3 +85,10 @@
     width: 100%;
 
 }
+
+@media screen and (max-width: 545px){
+
+.hero-title {
+    font-size: 2rem;
+}
+}
