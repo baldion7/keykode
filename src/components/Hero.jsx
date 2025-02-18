@@ -58,7 +58,7 @@ const Hero = () => {
                     <DecryptedText
                         text="Creamos software innovador que impulsa el futuro digital de tu empresa"
                         className="revealed"
-                        speed={100}
+                        speed={30}
                         sequential={true}
                         animateOn="view"
                         parentClassName="all-letters"

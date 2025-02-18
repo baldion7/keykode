@@ -7,6 +7,9 @@ import {Service} from "./components/Service.jsx";
 import WhyUsSection from "./components/WhyUsSection.jsx";
 import AboutStats from "./components/AboutStats.jsx";
 import AboutUs from "./components/AboutUs.jsx";
+import ProjectsSection from "./components/ProjectsSection.jsx";
+import ContactSection from "./components/ContactSection.jsx";
+import Footer from "./components/Footer.jsx";
 
 
 function App() {
@@ -25,8 +28,10 @@ function App() {
             <AboutStats/>
             <AboutUs/>
             <Service/>
+            <ProjectsSection/>
             <WhyUsSection/>
-
+            <ContactSection/>
+            <Footer/>
         </div>
     );
 }
