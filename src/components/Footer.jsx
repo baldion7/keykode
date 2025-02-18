@@ -4,30 +4,19 @@ import AnimatedContent from "../blocks/Animations/AnimatedContent/AnimatedConten
 
 const Footer = () => {
     return (
-        <AnimatedContent
-            distance={150}
-            direction="vertical"
-            reverse={false}
-            config={{tension: 80, friction: 20}}
-            initialOpacity={0.2}
-            animateOpacity
-            scale={1.1}
-            threshold={0.2}
-        >
-            <footer className="footer">
-                <div className="footer-container">
-                    <div className="footer-content">
-                        <div className="brand-container">
-                            <Code2 className="brand-icon"/>
-                            <span className="brand-text">KeyKode</span>
-                        </div>
-                        <div className="copyright">
-                            © 2024 KeyKode. Todos los derechos reservados.
-                        </div>
+        <footer className="footer">
+            <div className="footer-container">
+                <div className="footer-content">
+                    <div className="brand-container">
+                        <Code2 className="brand-icon"/>
+                        <span className="brand-text">KeyKode</span>
+                    </div>
+                    <div className="copyright">
+                        © 2024 KeyKode. Todos los derechos reservados.
                     </div>
                 </div>
-            </footer>
-        </AnimatedContent>
+            </div>
+        </footer>
     );
 };
 

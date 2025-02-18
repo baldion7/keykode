@@ -18,8 +18,12 @@ html{
 }
 
 
-
-
+body{
+    user-select: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
 .header{
     background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 
