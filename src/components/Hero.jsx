@@ -5,6 +5,7 @@ import SplitText from "../TextAnimations/SplitText/SplitText.jsx";
 import RotatingText from "../TextAnimations/RotatingText/RotatingText.jsx";
 import DecryptedText from "../TextAnimations/DecryptedText/DecryptedText.jsx";
 import AnimatedContent from "../blocks/Animations/AnimatedContent/AnimatedContent.jsx";
+import BlurText from "../TextAnimations/BlurText/BlurText.jsx";
 
 
 const Hero = () => {
@@ -54,7 +55,7 @@ const Hero = () => {
                    </span>
 
                 </h1>
-                <p className="hero-subtitle">
+                <p className="hero-subtitle decrypted">
                     <DecryptedText
                         text="Creamos software innovador que impulsa el futuro digital de tu empresa"
                         className="revealed"
@@ -63,6 +64,17 @@ const Hero = () => {
                         animateOn="view"
                         parentClassName="all-letters"
                         encryptedClassName="encrypted"
+                    />
+
+                </p>
+                <p className="hero-subtitle bluer">
+                    <BlurText
+                        text="Creamos software innovador que impulsa el futuro digital de tu empresa"
+                        delay={150}
+                        animateBy="words"
+                        direction="top"
+                        onAnimationComplete={handleAnimationComplete}
+                        className="text-2xl mb-8"
                     />
 
                 </p>

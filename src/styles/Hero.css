@@ -84,10 +84,20 @@
     width: 100%;
 
 }
+.bluer{
+    display: none;
+}
 
 @media screen and (max-width: 545px){
 
 .hero-title {
     font-size: 2rem;
 }
+    .bluer{
+        display: block;
+    }
+
+    .decrypted{
+        display: none;
+    }
 }
