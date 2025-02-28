@@ -11,6 +11,7 @@ import ProjectsSection from "./components/ProjectsSection.jsx";
 import ContactSection from "./components/ContactSection.jsx";
 import Footer from "./components/Footer.jsx";
 import {SeoLanding} from "./components/SeoLanding.jsx";
+import {HelmetProvider} from "react-helmet-async";
 
 function App() {
     const [scrolled, setScrolled] = useState(false);
@@ -20,9 +21,10 @@ function App() {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
+    const helmetContext = {};
     return (
         <div>
+            <HelmetProvider context={helmetContext}>
             <SeoLanding/>
             <Header scrolled={scrolled}/>
             <Hero/>
@@ -33,7 +35,7 @@ function App() {
             <WhyUsSection/>
             <ContactSection/>
             <Footer/>
-
+            </HelmetProvider>
         </div>
     );
 }

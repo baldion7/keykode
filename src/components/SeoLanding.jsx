@@ -31,7 +31,7 @@ export const SeoLanding = () => {
                 property="twitter:description"
                 content="Consultoría tecnológica y desarrollo de software personalizado para empresas. Soluciones escalables y modernas para tu negocio."
             />
-            <meta property="twitter:image" content="https://keykode.com/og-image-keykode.jpg" />
+            <meta property="twitter:image" content="https://keykode.tech/og-image-keykode.jpg" />
 
             <link rel="canonical" href="https://keykode.tech/" />
         </Helmet>
