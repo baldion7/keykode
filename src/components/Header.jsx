@@ -23,6 +23,7 @@ const Header = ({scrolled}) => {
                 </div>
                 <nav className="nav-links">
                     <a href="#about">Nosotros</a>
+                    <a href="#services">Servicios</a>
                     <a href="#projects">Proyectos</a>
                     <a href="#contact">Contacto</a>
                 </nav>

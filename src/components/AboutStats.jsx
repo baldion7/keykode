@@ -2,22 +2,23 @@ import React from 'react';
 import { Rocket, Users, Star } from 'lucide-react';
 import '../styles/AboutStats.css';
 import AnimatedContent from "../blocks/Animations/AnimatedContent/AnimatedContent.jsx";
+import CountUp from "../TextAnimations/CountUp/CountUp.js";
 
 const AboutStats = () => {
     const stats = [
         {
             icon: <Rocket className="stats-icon" />,
-            value: "150+",
+            value: "40+",
             label: "Proyectos Completados"
         },
         {
             icon: <Users className="stats-icon" />,
-            value: "50+",
+            value: "20+",
             label: "Clientes Satisfechos"
         },
         {
             icon: <Star className="stats-icon" />,
-            value: "98%",
+            value: "99%",
             label: "Tasa de Satisfacción"
         }
     ];
@@ -40,7 +41,17 @@ const AboutStats = () => {
                     {stats.map((stat, index) => (
                         <div key={index} className="stats-card">
                             {stat.icon}
-                            <h3>{stat.value}</h3>
+                            <h3>
+                            <CountUp
+                                from={0}
+                                to={stat.value}
+                                separator=","
+                                direction="up"
+                                duration={1}
+                                className="count-up-text"
+                            />
+                                {stat.label==="Tasa de Satisfacción"? "%" : ""}
+                           </h3>
                             <p>{stat.label}</p>
                         </div>
                     ))}

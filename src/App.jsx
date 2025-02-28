@@ -10,7 +10,7 @@ import AboutUs from "./components/AboutUs.jsx";
 import ProjectsSection from "./components/ProjectsSection.jsx";
 import ContactSection from "./components/ContactSection.jsx";
 import Footer from "./components/Footer.jsx";
-
+import {SeoLanding} from "./components/SeoLanding.jsx";
 
 function App() {
     const [scrolled, setScrolled] = useState(false);
@@ -23,6 +23,7 @@ function App() {
 
     return (
         <div>
+            <SeoLanding/>
             <Header scrolled={scrolled}/>
             <Hero/>
             <AboutStats/>
@@ -32,6 +33,7 @@ function App() {
             <WhyUsSection/>
             <ContactSection/>
             <Footer/>
+
         </div>
     );
 }

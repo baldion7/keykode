@@ -24,7 +24,7 @@ const AboutUs = () => {
             scale={1.1}
             threshold={0.2}
         >
-        <section id="nosotros" className="about-section">
+        <section  className="about-section">
             <div className="about-container">
                 <div className="workflow-container">
                     <h3 className="workflow-title">Nuestra Metodología de Trabajo</h3>
